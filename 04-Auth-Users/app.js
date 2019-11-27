@@ -3,7 +3,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const mongoose = require('mongoose');
 
-const MONGO_URL = 'mongodb+srv://<user>:<password>@cluster0-zrsf9.mongodb.net/test?retryWrites=true&w=majority';
+const MONGO_URL = 'mongodb+srv://user13:user13pass@cluster0-zrsf9.mongodb.net/test?retryWrites=true&w=majority';
 const app = express();
 app.set('port',process.env.PORT||4200);
 const PORT = app.get('port');
